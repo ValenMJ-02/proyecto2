@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chamberphoto - Gestión de Proyectos Fotográficos</title>
+</head>
+<body>
+    <header>
+        <h1>Chamberphoto</h1>
+        <nav>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#fotografos">Fotógrafos</a></li>
+                <li><a href="#inventario">Inventario</a></li>
+                <li><a href="#portal">Portal de Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="proyectos">
+            <h2>Gestión de Proyectos Fotográficos</h2>
+            <form id="form-proyecto" onsubmit="crearProyecto(event)">
+                <input type="text" id="nombre-proyecto" placeholder="Nombre del Proyecto" required>
+                <input type="text" id="cliente-asociado" placeholder="Cliente Asociado" required>
+                <input type="date" id="fecha-inicio" required>
+                <input type="date" id="fecha-entrega" required>
+                <select id="estado-proyecto" required>
+                    <option value="" disabled selected>Estado del Proyecto</option>
+                    <option value="planeado">Planeado</option>
+                    <option value="en progreso">En Progreso</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+                <button type="submit">Crear Proyecto</button>
+            </form>
+
+            <h3>Proyectos Actuales:</h3>
+            <ul id="lista-proyectos"></ul>
+        </section>
+
+        <section id="fotografos">
+            <h2>Asignación de Fotógrafos y Equipo</h2>
+            <!-- Aquí puedes agregar un formulario o tabla para gestionar fotógrafos -->
+        </section>
+
+        <section id="inventario">
+            <h2>Control de Inventario de Equipo Fotográfico</h2>
+            <!-- Aquí puedes agregar un formulario o tabla para gestionar el inventario -->
+        </section>
+
+        <section id="portal">
+            <h2>Portal de Clientes</h2>
+            <!-- Aquí puedes agregar funcionalidades para que los clientes revisen sus proyectos -->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chamberphoto. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Agregar el script de JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
